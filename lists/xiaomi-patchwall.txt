@@ -1,0 +1,33 @@
+# Xiaomi / Redmi Android TV with PatchWall: packages switched off by debloat.sh.
+# Disabled with `pm disable-user`, never uninstalled; ./restore.sh turns them back on.
+# Put a # in front of any line to keep that app.
+# Adapted from the CleanYourTV Xiaomi Mi TV 4A list (MIT). Firmware updates, inputs, remote,
+# Settings and the keyboard are protected by lib.sh and can never be disabled from a list.
+
+# Telemetry
+com.miui.tv.analytics
+com.xiaomi.statistic
+
+# PatchWall content rows and promos (the launcher itself is handled by install.sh)
+com.mitv.tvhome.michannel
+com.mitv.tvhome.mitvplus
+com.xm.webcontent
+com.xiaomi.floatingframe
+
+# Background services
+com.xiaomi.mitv.tvmanager          # "TV Manager" cleaner
+com.xiaomi.mitv.smartshare
+com.mitv.milinkservice             # Mi cast (Chromecast keeps working)
+com.xiaomi.amazon.alexa            # Alexa bridge
+android.autoinstalls.config.xiaomi.amelie   # silent preinstalls
+
+# Preloaded apps
+com.xiaomi.mimusic2
+com.google.android.play.games
+com.google.android.feedback
+com.google.android.apps.tachyon    # Google Duo
+fusion.android.tv.demo
+
+# Google recommendation feeders (unused once PatchWall is off)
+com.google.android.tvrecommendations
+com.google.android.leanbacklauncher.recommendations

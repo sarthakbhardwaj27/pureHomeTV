@@ -1,0 +1,17 @@
+# Signing key: never publish (anyone holding it can ship "updates" to installed copies)
+*.keystore
+*.jks
+
+# Build output
+source/build/
+
+# Per-device state written by the scripts (package lists, logs with LAN IPs)
+backups/
+diag/
+screenshots/capture.log
+screenshots/run*/
+
+# Archived old versions
+_old_v1/
+
+.DS_Store
